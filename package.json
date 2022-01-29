@@ -1,7 +1,10 @@
 {
   "name": "@hexlet/code",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1a",
+  "bin": {
+    "gendiff": "bin/genDiff.js"
+  },
   "description": "[![Actions Status](https://github.com/bunkua/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/bunkua/frontend-project-lvl2/actions)",
   "main": "index.js",
   "scripts": {

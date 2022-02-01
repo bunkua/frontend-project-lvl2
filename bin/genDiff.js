@@ -9,6 +9,10 @@ program
   .option('-f, --format [type]', 'output format')
   .argument('<filepath1>')
   .argument('<filepath2>')
-  .action((filepath1, filepath2, option) => genDiff(filepath1, filepath2, option.format))
-  .version('0.0.1a')
-  .parse();
+  .action((filepath1, filepath2, option) => {
+    const diff = genDiff(filepath1, filepath2, option.format);
+    console.log(diff);
+  })
+  .version('0.0.1a');
+
+program.parse();
